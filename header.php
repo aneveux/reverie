@@ -17,11 +17,11 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/foundation.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/app.css">
 
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-    <?php if (is_child_theme()) { ?>
-    <!-- Include Child theme CSS file -->
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-    <?php } ?>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+	<?php if (is_child_theme()) { ?>
+	<!-- Include Child theme CSS file -->
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+	<?php } ?>
 	
 	<!--[if lt IE 9]>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/ie.css">
@@ -52,51 +52,55 @@
 	<!-- All JavaScript at the bottom, except for Modernizr / Respond.
 	     Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
 	     For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
-	<?php
-	wp_enqueue_script( 'modernizr', get_template_directory_uri().'/js/libs/modernizr-2.0.6.min.js' );
-	
-	// Included JS Files of Foundation
-	wp_enqueue_script( 'foundation', get_template_directory_uri().'/js/foundation.js', array( 'jquery' ), '1.0', true );
-	wp_enqueue_script( 'app', get_template_directory_uri().'/js/app.js', array( 'jquery' ), '1.0', true );
-	?>
-	
-	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-	<?php wp_head(); ?>
-</head>
+	     <?php
+	     wp_enqueue_script( 'modernizr', get_template_directory_uri().'/js/libs/modernizr-2.0.6.min.js' );
 
-<body <?php body_class(); ?>>
-	
-	<!-- Start the main container -->
-	<div id="container" class="container" role="document">
-		
-		<!-- Row for blog navigation -->
-		<div class="row">
-			<header class="twelve columns" role="banner">
-				<div class="reverie-header">
-					<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-					<h4 class="subheader"><?php bloginfo('description'); ?></h4>
-				</div>
-				<nav role="navigation">
+	// Included JS Files of Foundation
+	     wp_enqueue_script( 'foundation', get_template_directory_uri().'/js/foundation.js', array( 'jquery' ), '1.0', true );
+	     wp_enqueue_script( 'app', get_template_directory_uri().'/js/app.js', array( 'jquery' ), '1.0', true );
+	     ?>
+
+	     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
+	     <?php wp_head(); ?>
+	 </head>
+
+	 <body <?php body_class(); ?>>
+
+	 	<!-- Start the main container -->
+	 	<div id="container" class="container" role="document">
+
+	 		<!-- Row for blog navigation -->
+	 		<div class="row">
+	 			<header class="twelve columns" role="banner">
+	 				<div class="reverie-header">
+	 					<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+	 					<h4 class="subheader"><?php bloginfo('description'); ?></h4>
+
+	 					<div class="header-twitter-link">
+	 						<a href="https://twitter.com/antoineneveux" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/misc/twitter.png" alt="Twitter" title="@antoineneveux" /></a>
+	 					</div>
+	 				</div>
+	 				<nav role="navigation">
 					<?php /*
 						You can use Foundation Tabs to get a better responsive design.
 					    Our navigation menu. If one isn't filled out, wp_nav_menu falls
 					    back to wp_page_menu. The menu assigned to the primary position is
 					    the one used. If none is assigned, the menu with the lowest ID is
 					    used. */
-						
+
 					    wp_nav_menu( array(
-						'theme_location' => 'primary_navigation',
-						'container' =>false,
-						'menu_class' => '',
-						'echo' => true,
-						'before' => '',
-						'after' => '',
-						'link_before' => '',
-						'link_after' => '',
-						'depth' => 0,
-						'items_wrap' => '<dl class="nav hide-on-phones"><dt>Blog Menu:</dt>%3$s</dl>',
-						'walker' => new description_walker())
-					); ?>
-				</nav>
-			</header>
-		</div>
+					    	'theme_location' => 'primary_navigation',
+					    	'container' =>false,
+					    	'menu_class' => '',
+					    	'echo' => true,
+					    	'before' => '',
+					    	'after' => '',
+					    	'link_before' => '',
+					    	'link_after' => '',
+					    	'depth' => 0,
+					    	'items_wrap' => '<dl class="nav hide-on-phones"><dt>Blog Menu:</dt>%3$s</dl>',
+					    	'walker' => new description_walker())
+					    	); ?>
+					    </nav>
+					</header>
+				</div>
