@@ -3,8 +3,13 @@
 				<?php dynamic_sidebar("Footer"); ?>
 			</div>
 			<div class="row">
-				<div class="four columns">
-					&copy; <?php echo date('Y'); ?> // <?php bloginfo('name'); ?> powered by <a href="http://themefortress.com/reverie/" title="Reverie Framework">Reverie Framework</a>.
+				<div class="eight columns">
+					<span class="footer-rss-link"><a href="<?php echo home_url(); ?>/feed/"><img src="<?php echo get_template_directory_uri(); ?>/images/misc/rss.png" alt="RSS" title="RSS" /></a></span>
+					&copy; <?php echo date('Y'); ?>
+					<br/>
+					<?php bloginfo('name'); ?> is powered by <a href="http://themefortress.com/reverie/" title="Reverie Framework">Reverie Framework</a>,
+					<br/>
+					with some <a href="https://github.com/aneveux/reverie">little contributions</a>.
 				</div>
 				<?php wp_nav_menu(array('theme_location' => 'utility_navigation', 'container' => false, 'menu_class' => 'eight columns footer-nav')); ?>
 			</div>
@@ -17,11 +22,11 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/foundation.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script>
 	<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
-	     chromium.org/developers/how-tos/chrome-frame-getting-started -->
+	chromium.org/developers/how-tos/chrome-frame-getting-started -->
 	<!--[if lt IE 7]>
 		<script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
 		<script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-	<![endif]-->
-	<?php wp_footer(); ?>
-</body>
-</html>
+		<![endif]-->
+		<?php wp_footer(); ?>
+	</body>
+	</html>
