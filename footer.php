@@ -4,9 +4,7 @@
 			</div>
 			<div class="row">
 				<div class="four columns">
-					&copy; 2008-<?php echo date('Y'); ?> All rights reserved.
-					<br>
-					<?php bloginfo('name'); ?> is powered by <a href="http://themefortress.com/reverie/" title="Reverie Framework">Reverie Framework</a>.
+					&copy; <?php echo date('Y'); ?> // <?php bloginfo('name'); ?> powered by <a href="http://themefortress.com/reverie/" title="Reverie Framework">Reverie Framework</a>.
 				</div>
 				<?php wp_nav_menu(array('theme_location' => 'utility_navigation', 'container' => false, 'menu_class' => 'eight columns footer-nav')); ?>
 			</div>
