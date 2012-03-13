@@ -151,3 +151,15 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
     	width:55px;
       padding:0;
     }
+
+    #humans {
+      margin: 0; padding: 0;
+      width:100%;
+      height:33px;
+      background-color:#444;
+      text-align:center;
+    }
+
+    #humans a>img {
+      border:0;
+    }

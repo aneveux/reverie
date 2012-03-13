@@ -67,6 +67,10 @@
 
 	 <body <?php body_class(); ?>>
 
+	 	<div id="humans">
+	 		<a href="http://www.antoineneveux.fr/humans.txt"><img src="<?php echo get_template_directory_uri(); ?>/images/humanstxt.png" alt="humanstxt.org" title="We are people, not machines." /></a> 
+	 	</div>
+
 	 	<!-- Start the main container -->
 	 	<div id="container" class="container" role="document">
 
