@@ -4,7 +4,7 @@
 			</div>
 			<div class="row">
 				<div class="eight columns">
-					<span class="footer-rss-link"><a href="<?php echo home_url(); ?>/feed/"><img src="<?php echo get_template_directory_uri(); ?>/images/misc/rss.png" alt="RSS" title="RSS" /></a></span>
+					<span class="footer-rss-link image-link"><a href="<?php echo home_url(); ?>/feed/"><img src="<?php echo get_template_directory_uri(); ?>/images/misc/rss.png" alt="RSS" title="RSS" /></a></span>
 					&copy; <?php echo date('Y'); ?>
 					<br/>
 					<?php bloginfo('name'); ?> is powered by <a href="http://themefortress.com/reverie/" title="Reverie Framework">Reverie Framework</a>,

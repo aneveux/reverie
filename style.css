@@ -19,7 +19,7 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
 :: Your Customized Style
 */
 
-@import url(http://fonts.googleapis.com/css?family=Exo);
+@import url(http://fonts.googleapis.com/css?family=Terminal+Dosis);
 
 /* ---------------------------------------------------
    Customized Adjustments of Foundation for WordPress
@@ -44,7 +44,7 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
 
    	/* Foundation-specific presentation CSS by ZURB */
    	body { padding-bottom: 60px; }
-   	div.reverie-header { margin: 0 0 30px 0; padding: 20px 0 0 0; border-bottom: solid 1px #ccc; font-family: 'Exo', sans-serif; }
+   	div.reverie-header { margin: 0 0 30px 0; padding: 20px 0 0 0; border-bottom: solid 1px #ccc; font-family: 'Terminal Dosis', sans-serif; }
    	div.reverie-header h1 { margin-bottom: 0; padding: 0; }
    	div.reverie-header h1 a { color: #181818; }
    	div.reverie-header h1 a:hover { color: #2A85E8; }
@@ -116,6 +116,19 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
 /*  --------------------------
     Your Customized Style
     ----------------------- */
+
+    .image-link a {
+      -webkit-transition: opacity .6s ease-in;
+      -moz-transition: opacity .6s ease-in;
+      -o-transition: opacity .6s ease-in;
+      transition: opacity .6s ease-in;
+    }
+
+    .image-link a:hover {
+      opacity: 0.5;
+      -moz-opacity: 0.5;
+      filter:alpha(opacity=5);
+    }
 
     .header-twitter-link {
     	position: absolute;
