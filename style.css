@@ -25,32 +25,39 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
    Customized Adjustments of Foundation for WordPress
    --------------------------------------------------- */
 
-   /* Auto Height for Images for Responsive Design */
-   img { height: auto; }
-   li { margin-bottom: 2%; }
+   a {
+    -webkit-transition: all .6s ease-in;
+    -moz-transition: all .6s ease-in;
+    -o-transition: all .6s ease-in;
+    transition: all .6s ease-in;
+  }
 
-   /* ZURB Navi for Foundation */
-   dl.nav { display: block; width: auto; height: 27px; margin: 0 0 18px; }
-   dl.nav dt, dl.nav dd { float: left; display: inline; }
-   dl.nav dt { color: #999; font-weight: normal; }
-   dl.nav dd a { text-decoration: none; margin-left: 6px; padding: 5px 12px;
-   	-webkit-border-radius: 12px; -moz-border-radius: 12px; }
-   	dl.nav dd a:hover { background: #eee; }
-   	dl.nav dd.current-menu-item a,
-   	dl.nav dd.current-post-ancestor a,
-   	dl.nav dd.current-menu-parent a,
-   	dl.nav dd.current-post-parent a
-   	{ background: #2A85E8; color: #fff; }
+  /* Auto Height for Images for Responsive Design */
+  img { height: auto; }
+  li { margin-bottom: 2%; }
 
-   	/* Foundation-specific presentation CSS by ZURB */
-   	body { padding-bottom: 60px; }
-   	div.reverie-header { margin: 0 0 30px 0; padding: 20px 0 0 0; border-bottom: solid 1px #ccc; font-family: 'Terminal Dosis', sans-serif; }
-   	div.reverie-header h1 { margin-bottom: 0; padding: 0; }
-   	div.reverie-header h1 a { color: #181818; }
-   	div.reverie-header h1 a:hover { color: #2A85E8; }
-   	div.reverie-header .subheader { margin-bottom: 9px; }
-   	div.highlight { margin-bottom: 12px; }
-   	img.beta { position: absolute; top: 0px; right: 0px; }
+  /* ZURB Navi for Foundation */
+  dl.nav { display: block; width: auto; height: 27px; margin: 0 0 18px; }
+  dl.nav dt, dl.nav dd { float: left; display: inline; }
+  dl.nav dt { color: #999; font-weight: normal; }
+  dl.nav dd a { text-decoration: none; margin-left: 6px; padding: 5px 12px;
+    -webkit-border-radius: 12px; -moz-border-radius: 12px; }
+    dl.nav dd a:hover { background: #eee; }
+    dl.nav dd.current-menu-item a,
+    dl.nav dd.current-post-ancestor a,
+    dl.nav dd.current-menu-parent a,
+    dl.nav dd.current-post-parent a
+    { background: #2A85E8; color: #fff; }
+
+    /* Foundation-specific presentation CSS by ZURB */
+    body { padding-bottom: 60px; }
+    div.reverie-header { margin: 0 0 30px 0; padding: 20px 0 0 0; border-bottom: solid 1px #ccc; font-family: 'Terminal Dosis', sans-serif; }
+    div.reverie-header h1 { margin-bottom: 0; padding: 0; }
+    div.reverie-header h1 a { color: #181818; }
+    div.reverie-header h1 a:hover { color: #2A85E8; }
+    div.reverie-header .subheader { margin-bottom: 9px; }
+    div.highlight { margin-bottom: 12px; }
+    img.beta { position: absolute; top: 0px; right: 0px; }
 
 /* -----------------------------------------
    Styling Basic WordPress Outputs
