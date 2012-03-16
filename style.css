@@ -32,6 +32,10 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
     transition: all .6s ease-in;
   }
 
+  a img {
+    border:0;
+  }
+
   /* Auto Height for Images for Responsive Design */
   img { height: auto; }
   li { margin-bottom: 2%; }
@@ -88,7 +92,7 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
    figure.alignleft.figure { float: left; margin: 0 18px 18px 0; }
 
    /* Sidebar Adjustment */
-   .sidebar-section { padding-bottom: 10px; padding-top: 20px;	font-size: 1.3rem; font-weight: normal;	}
+   .sidebar-section { padding-bottom: 10px; padding-top: 10px;	font-size: 1.3rem; font-weight: normal;	}
 
    /* Footer Nav */
    .footer-section { padding-bottom: 10px; padding-top: 20px; font-size: 1.3rem; font-weight: normal; }
@@ -167,6 +171,6 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
       text-align:center;
     }
 
-    #humans a>img {
-      border:0;
+    .post-box article>header {
+      border-bottom: solid 1px #ccc;
     }
