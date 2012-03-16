@@ -173,6 +173,11 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
 
     .post-box article>header {
       border-bottom: solid 1px #ccc;
+      margin-bottom:10px;
+    }
+
+    .post-box article>header>time {
+      font-size:12px;
     }
 
     .entry-content {
@@ -182,12 +187,12 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
     .entry-content h1 {
       font-size:22px;
       text-indent:15px;
-      border-bottom: solid 1px #eee;
+      border-bottom: solid 1px #ddd;
     }
 
     .entry-content ul li:before {
       content:"\00BB \0020";
-      color:#ccc;
+      color:#aaa;
       position:absolute;
       margin-left:-20px;
     }
