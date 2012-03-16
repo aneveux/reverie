@@ -173,11 +173,11 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
 
     .post-box article>header {
       border-bottom: solid 1px #ccc;
-      margin-bottom:10px;
+      margin-bottom:15px;
     }
 
     .post-box article>header>time {
-      font-size:12px;
+      font-size:11px;
     }
 
     .entry-content {
