@@ -178,3 +178,10 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
     .entry-content {
       text-align:justify;
     }
+
+    .entry-content ul li:before {
+      content:"\00BB \0020";
+      color:#ccc;
+      position:absolute;
+      margin-left:-20px;
+    }
