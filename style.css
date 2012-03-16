@@ -93,6 +93,7 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
 
    /* Sidebar Adjustment */
    .sidebar-section { padding-bottom: 10px; padding-top: 10px;	font-size: 1.3rem; font-weight: normal;	}
+   .sidebar-section li {margin-bottom:0;}
 
    /* Footer Nav */
    .footer-section { padding-bottom: 10px; padding-top: 20px; font-size: 1.3rem; font-weight: normal; }
