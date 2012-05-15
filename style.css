@@ -20,7 +20,7 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
 :: Your Customized Style
 */
 
-@import url(http://fonts.googleapis.com/css?family=Terminal+Dosis);
+@import url(http://fonts.googleapis.com/css?family=Salsa);
 
 /* ---------------------------------------------------
    Customized Adjustments of Foundation for WordPress
@@ -35,6 +35,10 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
 
   a img {
     border:0;
+  }
+
+  a:hover {
+    color: #ff6600;
   }
 
   /* Auto Height for Images for Responsive Design */
@@ -56,7 +60,7 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
 
    /* Foundation-specific presentation CSS by ZURB */
    body { padding-bottom: 0; width: 100%; background: #fff; border: none; max-width: 100%; }
-   div.reverie-header { margin: 0 0 30px 0; padding: 20px 0 0 0; border-bottom: solid 1px #ccc; font-family: 'Terminal Dosis', sans-serif; }
+   div.reverie-header { margin: 0 0 30px 0; padding: 20px 0 0 0; border-bottom: solid 1px #ccc; font-family: 'Salsa', cursive; }
    div.reverie-header h1 { margin-bottom: 0; padding: 0; }
    div.reverie-header h1 a { color: #181818; }
    div.reverie-header h1 a:hover { color: #2A85E8; }
@@ -70,8 +74,8 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
 
    /* Resizing the Blog Post */
    .post-box p { line-height: 21px; font-size: 14px; font-size: 1.4rem; }
-   .post-box h1 { font-weight: bold; font-size: 30px; font-size: 3rem; line-height: 1; margin-bottom: 2px; }
-   .post-box h2 { font-weight: bold; font-size: 26px; font-size: 2.6rem; line-height: 1; margin-bottom: 2px; }
+   .post-box h1 { font-family: 'Salsa', cursive; font-weight: bold; font-size: 30px; font-size: 3rem; line-height: 1; margin-bottom: 2px; }
+   .post-box h2 { font-family: 'Salsa', cursive; font-weight: bold; font-size: 26px; font-size: 2.6rem; line-height: 1; margin-bottom: 2px; }
    .post-box h3 { font-size: 22px; font-size: 2.2rem; }
    .post-box h4 { font-size: 18px; font-size: 1.8rem; }
 
