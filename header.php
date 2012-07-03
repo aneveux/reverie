@@ -70,7 +70,7 @@
 					<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
 					<h4 class="subheader"><?php bloginfo('description'); ?></h4>
 
-					<div class="header-twitter-link image-link hide-on-phones">
+					<div class="header-twitter-link image-link hide-for-small">
 						<a href="https://twitter.com/antoineneveux" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/misc/twitter.png" alt="Twitter" title="@antoineneveux" /></a>
 					</div>
 				</div>
