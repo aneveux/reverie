@@ -11,6 +11,7 @@
 	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
 	
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	<!-- Included Foundation CSS Files -->
@@ -28,7 +29,6 @@
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	
 	<!-- Favicon and Feed -->
 	<link rel="shortcut icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
@@ -49,10 +49,8 @@
 	<!-- Startup Image iPhone (320x460) -->
 	<link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/images/devices/reverie-load.png" media="screen and (max-device-width: 320px)" />
 	
-	<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.foundation.js"></script>
-	
-	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-	<?php wp_head(); ?>
+<?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
